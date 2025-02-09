@@ -1,0 +1,35 @@
+body {
+  background-color: #7B8B9C;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+@keyframes blink {
+  0% { background-color: red; }
+  50% { background-color: yellow; }
+  100% { background-color: red; }
+}
+
+.sound_buttons {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 12px;
+}
+
+.sound_buttons:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.light {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation: blink 1s infinite;
+}
